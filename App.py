@@ -67,14 +67,7 @@ if uploaded_file is not None:
 # Sample button for further processing (modify as needed)
 import random
 if st.button("Process Image"):
-    # Add your processing logic here
-    # fv_hu_moments = fd_hu_moments(image)
-    # fv_haralick   = fd_haralick(image)
-    # fv_histogram  = fd_histogram(image)
-    # fv_hog        = get_hog(image)
-    ###################################
-    # Concatenate global features
-    ###################################
+
     pred_list = list((random.uniform(0.0, 1.0)) for _ in range(7))
     flag=False
     for i in pred_list:
